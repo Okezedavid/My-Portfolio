@@ -8,13 +8,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Orbitron:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     fontFamily: {
                         'sans': ['Poppins', 'system-ui', 'sans-serif'],
+                        'heading': ['Orbitron', 'sans-serif'],
                         'mono': ['JetBrains Mono', 'monospace'],
                     },
                     animation: {
@@ -53,7 +54,7 @@
     <nav class="fixed top-0 w-full bg-gray-900/95 backdrop-blur-sm z-50 border-b border-gray-800">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center py-4">
-                <div class="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
+                <div class="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent font-heading">
                 Portfolio
                 </div>
                 <div class="hidden md:flex space-x-8">
@@ -90,7 +91,7 @@
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="grid md:grid-cols-2 gap-12 items-center">
                 <div class="space-y-8 animate-slide-up">
-                    <h1 class="text-5xl md:text-7xl font-bold leading-tight">
+                    <h1 class="text-5xl md:text-7xl font-bold leading-tight font-heading">
                         Hi, I'm <span class="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">David</span>
                     </h1>
                     <h2 class="text-2xl md:text-3xl text-gray-300 font-light">
@@ -108,13 +109,13 @@
                         </a>
                     </div>
                     <div class="flex space-x-6 pt-4">
-                        <a href="https://github.com/Okezedavid" class="text-gray-400 hover:text-blue-400 transition-colors duration-300 text-2xl">
+                        <a href="https://github.com/Okezedavid" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-blue-400 transition-colors duration-300 text-2xl">
                             <i class="fab fa-github"></i>
                         </a>
-                        <a href="https://www.linkedin.com/in/david-okeze-2300932b1?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="text-gray-400 hover:text-blue-400 transition-colors duration-300 text-2xl">
+                        <a href="https://www.linkedin.com/in/david-okeze-2300932b1?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-blue-400 transition-colors duration-300 text-2xl">
                             <i class="fab fa-linkedin"></i>
                         </a>
-                        <a href="https://x.com/DavidOkeze" class="text-gray-400 hover:text-blue-400 transition-colors duration-300 text-2xl">
+                        <a href="https://x.com/DavidOkeze" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-blue-400 transition-colors duration-300 text-2xl">
                             <i class="fab fa-twitter"></i>
                         </a>
                     </div>
@@ -148,7 +149,7 @@
     <section id="about" class="py-20 bg-gray-800/50">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-4xl md:text-5xl font-bold mb-4">About Me</h2>
+                <h2 class="text-4xl md:text-5xl font-bold mb-4 font-heading">About Me</h2>
                 <div class="w-24 h-1 bg-gradient-to-r from-blue-400 to-purple-500 mx-auto"></div>
             </div>
             
@@ -206,7 +207,7 @@
     <section id="journey" class="py-20">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-4xl md:text-5xl font-bold mb-4">My Development Journey</h2>
+                <h2 class="text-4xl md:text-5xl font-bold mb-4 font-heading">My Development Journey</h2>
                 <div class="w-24 h-1 bg-gradient-to-r from-blue-400 to-purple-500 mx-auto"></div>
                 <p class="text-gray-400 mt-4 max-w-2xl mx-auto">
                     From curious beginner to passionate developer - here's my story in web development
@@ -233,7 +234,7 @@
                                         <i class="fas fa-seedling text-white text-xl"></i>
                                     </div>
                                     <div>
-                                        <h3 class="text-2xl font-bold text-blue-400">The Beginning</h3>
+                                        <h3 class="text-2xl font-bold text-blue-400 font-heading">The Beginning</h3>
                                         <p class="text-gray-400 font-mono">2021 - 2022</p>
                                     </div>
                                 </div>
@@ -271,7 +272,7 @@
                                         <i class="fas fa-rocket text-white text-xl"></i>
                                     </div>
                                     <div>
-                                        <h3 class="text-2xl font-bold text-purple-400">Present Day</h3>
+                                        <h3 class="text-2xl font-bold text-purple-400 font-heading">Present Day</h3>
                                         <p class="text-gray-400 font-mono">2023 - 2025</p>
                                     </div>
                                 </div>
@@ -313,7 +314,7 @@
                                         <i class="fas fa-star text-white text-xl"></i>
                                     </div>
                                     <div>
-                                        <h3 class="text-2xl font-bold text-green-400">Future Vision</h3>
+                                        <h3 class="text-2xl font-bold text-green-400 font-heading">Future Vision</h3>
                                         <p class="text-gray-400 font-mono">2025 & Beyond</p>
                                     </div>
                                 </div>
@@ -371,7 +372,7 @@
     <section id="skills" class="py-20">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-4xl md:text-5xl font-bold mb-4">Skills & Technologies</h2>
+                <h2 class="text-4xl md:text-5xl font-bold mb-4 font-heading">Skills & Technologies</h2>
                 <div class="w-24 h-1 bg-gradient-to-r from-blue-400 to-purple-500 mx-auto"></div>
                 <p class="text-gray-400 mt-4 max-w-2xl mx-auto">
                     Here are the technologies and tools I work with to bring ideas to life
@@ -457,24 +458,24 @@
                     <span class="bg-gray-800 px-4 py-2 rounded-full text-sm hover:bg-blue-600 transition-colors duration-300 cursor-default">
                         <i class="fab fa-css3-alt mr-2"></i>CSS3
                     </span>
-                    <span class="bg-gray-800 px-4 py-2 rounded-full text-sm hover:bg-blue-600 transition-colors duration-300 cursor-default">
+                    <!-- <span class="bg-gray-800 px-4 py-2 rounded-full text-sm hover:bg-blue-600 transition-colors duration-300 cursor-default">
                         <i class="fab fa-sass mr-2"></i>Sass
-                    </span>
+                    </span> -->
                     <span class="bg-gray-800 px-4 py-2 rounded-full text-sm hover:bg-blue-600 transition-colors duration-300 cursor-default">
                         <i class="fab fa-node-js mr-2"></i>Node.js
                     </span>
                     <span class="bg-gray-800 px-4 py-2 rounded-full text-sm hover:bg-blue-600 transition-colors duration-300 cursor-default">
                         <i class="fab fa-npm mr-2"></i>npm
                     </span>
-                    <span class="bg-gray-800 px-4 py-2 rounded-full text-sm hover:bg-blue-600 transition-colors duration-300 cursor-default">
+                    <!-- <span class="bg-gray-800 px-4 py-2 rounded-full text-sm hover:bg-blue-600 transition-colors duration-300 cursor-default">
                         <i class="fas fa-database mr-2"></i>REST APIs
-                    </span>
+                    </span> -->
                     <span class="bg-gray-800 px-4 py-2 rounded-full text-sm hover:bg-blue-600 transition-colors duration-300 cursor-default">
                         <i class="fas fa-mobile-alt mr-2"></i>Responsive Design
                     </span>
-                    <span class="bg-gray-800 px-4 py-2 rounded-full text-sm hover:bg-blue-600 transition-colors duration-300 cursor-default">
+                    <!-- <span class="bg-gray-800 px-4 py-2 rounded-full text-sm hover:bg-blue-600 transition-colors duration-300 cursor-default">
                         <i class="fas fa-rocket mr-2"></i>Webpack
-                    </span>
+                    </span> -->
                 </div>
             </div>
         </div>
@@ -484,7 +485,7 @@
     <section id="projects" class="py-20 bg-gray-800/50">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-4xl md:text-5xl font-bold mb-4">Featured Projects</h2>
+                <h2 class="text-4xl md:text-5xl font-bold mb-4 font-heading">Featured Projects</h2>
                 <div class="w-24 h-1 bg-gradient-to-r from-blue-400 to-purple-500 mx-auto"></div>
                 <p class="text-gray-400 mt-4 max-w-2xl mx-auto">
                     Here are some of my recent projects that showcase my skills and creativity
@@ -511,10 +512,10 @@
                             <span class="bg-gray-700 px-2 py-1 rounded text-xs">JavaScript</span>
                         </div>
                         <div class="flex space-x-4">
-                            <a href="#" class="text-blue-400 hover:text-blue-300 transition-colors duration-300">
+                            <a href="#" target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:text-blue-300 transition-colors duration-300">
                                 <i class="fas fa-external-link-alt mr-1"></i>Live Demo
                             </a>
-                            <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">
+                            <a href="#" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition-colors duration-300">
                                 <i class="fab fa-github mr-1"></i>Code
                             </a>
                         </div>
@@ -540,10 +541,10 @@
                             <span class="bg-gray-700 px-2 py-1 rounded text-xs">CSS3</span>
                         </div>
                         <div class="flex space-x-4">
-                            <a href="#" class="text-blue-400 hover:text-blue-300 transition-colors duration-300">
+                            <a href="#" target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:text-blue-300 transition-colors duration-300">
                                 <i class="fas fa-external-link-alt mr-1"></i>Live Demo
                             </a>
-                            <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">
+                            <a href="#" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition-colors duration-300">
                                 <i class="fab fa-github mr-1"></i>Code
                             </a>
                         </div>
@@ -569,10 +570,10 @@
                             <span class="bg-gray-700 px-2 py-1 rounded text-xs">Tailwind</span>
                         </div>
                         <div class="flex space-x-4">
-                            <a href="#" class="text-blue-400 hover:text-blue-300 transition-colors duration-300">
+                            <a href="#" target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:text-blue-300 transition-colors duration-300">
                                 <i class="fas fa-external-link-alt mr-1"></i>Live Demo
                             </a>
-                            <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">
+                            <a href="#" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition-colors duration-300">
                                 <i class="fab fa-github mr-1"></i>Code
                             </a>
                         </div>
@@ -581,7 +582,7 @@
             </div>
 
             <div class="text-center mt-12">
-                <a href="#" class="inline-flex items-center bg-gradient-to-r from-blue-500 to-purple-600 px-8 py-3 rounded-full font-semibold hover:from-blue-600 hover:to-purple-700 transition-all duration-300 transform hover:scale-105">
+                <a href="https://github.com/Okezedavid" target="_blank" rel="noopener noreferrer" class="inline-flex items-center bg-gradient-to-r from-blue-500 to-purple-600 px-8 py-3 rounded-full font-semibold hover:from-blue-600 hover:to-purple-700 transition-all duration-300 transform hover:scale-105">
                     <i class="fab fa-github mr-2"></i>
                     View All Projects on GitHub
                 </a>
@@ -593,7 +594,7 @@
     <section id="contact" class="py-20">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-4xl md:text-5xl font-bold mb-4">Let's Work Together</h2>
+                <h2 class="text-4xl md:text-5xl font-bold mb-4 font-heading">Let's Work Together</h2>
                 <div class="w-24 h-1 bg-gradient-to-r from-blue-400 to-purple-500 mx-auto"></div>
                 <p class="text-gray-400 mt-4 max-w-2xl mx-auto">
                     I'm always open to discussing new opportunities and interesting projects
