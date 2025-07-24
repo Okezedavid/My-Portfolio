@@ -46,15 +46,37 @@
             }
         }
     </script>
+    <style>
+        /* Ensure mobile menu doesn't affect layout */
+        @media (max-width: 768px) {
+            body {
+                position: relative;
+            }
+            
+            #mobile-menu {
+                box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            }
+            
+            /* Prevent horizontal scrolling issues */
+            * {
+                max-width: 100%;
+            }
+            
+            /* Ensure navigation height is consistent */
+            nav {
+                height: 64px;
+            }
+        }
+    </style>
 </head>
 <body class="bg-gray-900 text-white overflow-x-hidden font-sans min-h-screen flex flex-col">
     <!-- Main Content Container -->
-    <div class="flex-grow w-full">
+    <div class="flex-grow w-full min-w-0">
     <!-- Navigation -->
     <nav class="fixed top-0 w-full bg-gray-900/95 backdrop-blur-sm z-50 border-b border-gray-800">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center py-4">
-                <div class="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent font-heading">
+            <div class="flex justify-between items-center py-3 md:py-4">
+                <div class="text-xl md:text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent font-heading">
                 Portfolio
                 </div>
                 <div class="hidden md:flex space-x-8">
@@ -65,14 +87,14 @@
                     <a href="#projects" class="hover:text-blue-400 transition-colors duration-300">Projects</a>
                     <a href="#contact" class="hover:text-blue-400 transition-colors duration-300">Contact</a>
                 </div>
-                <button id="mobile-menu-btn" class="md:hidden text-2xl">
+                <button id="mobile-menu-btn" class="md:hidden text-xl p-2 focus:outline-none flex-shrink-0">
                     <i class="fas fa-bars"></i>
                 </button>
             </div>
         </div>
         <!-- Mobile Menu -->
-        <div id="mobile-menu" class="md:hidden hidden bg-gray-800 border-t border-gray-700">
-            <div class="px-4 py-2 space-y-2">
+        <div id="mobile-menu" class="md:hidden hidden bg-gray-800 border-t border-gray-700 fixed top-16 left-0 right-0 z-40">
+            <div class="px-4 py-2 space-y-2 bg-gray-800">
                 <a href="#home" class="block py-2 hover:text-blue-400 transition-colors duration-300">Home</a>
                 <a href="#about" class="block py-2 hover:text-blue-400 transition-colors duration-300">About</a>
                 <a href="#journey" class="block py-2 hover:text-blue-400 transition-colors duration-300">Journey</a>
@@ -84,20 +106,20 @@
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="min-h-screen flex items-center justify-center relative overflow-hidden">
+    <section id="home" class="min-h-screen flex items-center justify-center relative overflow-hidden pt-20 md:pt-0">
         <div class="absolute inset-0 bg-gradient-to-br from-blue-900/20 to-purple-900/20"></div>
         <div class="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%234f46e5" fill-opacity="0.05"%3E%3Ccircle cx="30" cy="30" r="2"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')] opacity-50"></div>
         
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div class="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
-                <div class="space-y-6 md:space-y-8 animate-slide-up order-2 md:order-1">
-                    <h1 class="text-4xl sm:text-5xl md:text-7xl font-bold leading-tight font-heading">
+            <div class="grid md:grid-cols-2 gap-6 md:gap-12 items-center">
+                <div class="space-y-4 md:space-y-8 animate-slide-up order-2 md:order-1">
+                    <h1 class="text-3xl sm:text-4xl md:text-7xl font-bold leading-tight font-heading">
                         Hi, I'm <span class="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">David</span>
                     </h1>
-                    <h2 class="text-2xl md:text-3xl text-gray-300 font-light">
+                    <h2 class="text-xl sm:text-2xl md:text-3xl text-gray-300 font-light">
                         Frontend Developer
                     </h2>
-                    <p class="text-lg text-gray-400 max-w-lg">
+                    <p class="text-base sm:text-lg text-gray-400 max-w-lg">
                         Passionate about creating beautiful, responsive web applications using modern technologies like React, Next.js, Vue, and Tailwind CSS.
                     </p>
                     <div class="flex flex-col sm:flex-row gap-4">
@@ -122,15 +144,15 @@
                 </div>
                 <div class="flex justify-center animate-float order-1 md:order-2">
                     <div class="relative">
-                        <div class="w-64 h-64 sm:w-80 sm:h-80 rounded-full bg-gradient-to-r from-blue-500 to-purple-600 p-1">
-                            <img src="./assets/imgs/Porfile image for my website.jpg" alt="David - Frontend Developer" 
+                        <div class="w-56 h-56 sm:w-64 sm:h-64 md:w-80 md:h-80 rounded-full bg-gradient-to-r from-blue-500 to-purple-600 p-1">
+                            <img src="./assets/imgs/Dp for my Port.jpg" alt="David - Frontend Developer" 
                                  class="w-full h-full rounded-full object-cover">
                         </div>
-                        <div class="absolute -top-2 -right-2 sm:-top-4 sm:-right-4 w-12 h-12 sm:w-16 sm:h-16 bg-blue-500 rounded-full flex items-center justify-center animate-pulse">
-                            <i class="fas fa-code text-white text-lg sm:text-xl"></i>
+                        <div class="absolute -top-2 -right-2 sm:-top-4 sm:-right-4 w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:h-16 bg-blue-500 rounded-full flex items-center justify-center animate-pulse">
+                            <i class="fas fa-code text-white text-sm sm:text-base md:text-xl"></i>
                         </div>
-                        <div class="absolute -bottom-2 -left-2 sm:-bottom-4 sm:-left-4 w-10 h-10 sm:w-12 sm:h-12 bg-purple-500 rounded-full flex items-center justify-center animate-pulse">
-                            <i class="fas fa-laptop-code text-white text-sm sm:text-base"></i>
+                        <div class="absolute -bottom-2 -left-2 sm:-bottom-4 sm:-left-4 w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 bg-purple-500 rounded-full flex items-center justify-center animate-pulse">
+                            <i class="fas fa-laptop-code text-white text-xs sm:text-sm md:text-base"></i>
                         </div>
                     </div>
                 </div>
@@ -601,74 +623,64 @@
                 </p>
             </div>
 
-            <div class="grid md:grid-cols-2 gap-8 md:gap-12">
-                <div class="space-y-6 md:space-y-8 order-2 md:order-1">
-                    <div class="bg-gray-800/50 p-6 rounded-xl">
-                        <h3 class="text-2xl font-semibold mb-4">Get In Touch</h3>
-                        <p class="text-gray-400 mb-6">
+            <div class="grid md:grid-cols-2 gap-6 md:gap-12">
+                <div class="space-y-4 md:space-y-8 order-1 md:order-1">
+                    <div class="bg-gray-800/50 p-4 sm:p-6 rounded-xl">
+                        <h3 class="text-xl sm:text-2xl font-semibold mb-3 sm:mb-4">Get In Touch</h3>
+                        <p class="text-gray-400 mb-4 sm:mb-6 text-sm sm:text-base">
                             Whether you have a project in mind or just want to chat about frontend development, 
                             I'd love to hear from you!
                         </p>
                         
-                        <div class="space-y-4">
-                            <div class="flex items-center space-x-4">
-                                <div class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center">
-                                    <i class="fas fa-envelope text-white"></i>
+                        <div class="space-y-3 sm:space-y-4">
+                            <div class="flex items-center space-x-3 sm:space-x-4">
+                                <div class="w-10 h-10 sm:w-12 sm:h-12 bg-blue-500 rounded-full flex items-center justify-center flex-shrink-0">
+                                    <i class="fas fa-envelope text-white text-sm sm:text-base"></i>
                                 </div>
-                                <div>
-                                    <h4 class="font-semibold">Email</h4>
-                                    <p class="text-gray-400">davidugochukwu080@gmail.com</p>
+                                <div class="min-w-0 flex-1">
+                                    <h4 class="font-semibold text-sm sm:text-base">Email</h4>
+                                    <p class="text-gray-400 text-xs sm:text-sm break-all">davidugochukwu080@gmail.com</p>
                                 </div>
                             </div>
                             
-                            <div class="flex items-center space-x-4">
-                                <!-- <div class="w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center">
-                                    <i class="fab fa-linkedin text-white"></i>
-                                </div> -->
-                                <!-- <div>
-                                    <h4 class="font-semibold">LinkedIn</h4>
-                                    <p class="text-gray-400">linkedin.com/in/david</p>
-                                </div> -->
-                            </div>
-                            
-                            <div class="flex items-center space-x-4">
-                                <div class="w-12 h-12 bg-gray-600 rounded-full flex items-center justify-center">
-                                    <i class="fab fa-github text-white"></i>
+                            <div class="flex items-center space-x-3 sm:space-x-4">
+                                <div class="w-10 h-10 sm:w-12 sm:h-12 bg-gray-600 rounded-full flex items-center justify-center flex-shrink-0">
+                                    <i class="fab fa-github text-white text-sm sm:text-base"></i>
                                 </div>
-                                <div>
-                                    <h4 class="font-semibold">GitHub</h4>
-                                    <p class="text-gray-400">https://github.com/Okezedavid</p>
+                                <div class="min-w-0 flex-1">
+                                    <h4 class="font-semibold text-sm sm:text-base">GitHub</h4>
+                                    <p class="text-gray-400 text-xs sm:text-sm break-all">https://github.com/Okezedavid</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="bg-gray-800/50 p-4 sm:p-6 rounded-xl order-1 md:order-2">
-                    <form class="space-y-6">
+                <div class="bg-gray-800/50 p-3 sm:p-4 md:p-6 rounded-xl order-2 md:order-2">
+                    <form class="space-y-4 sm:space-y-6">
                         <div>
-                            <label for="name" class="block text-sm font-medium mb-2">Name</label>
+                            <label for="name" class="block text-xs sm:text-sm font-medium mb-1 sm:mb-2">Name</label>
                             <input type="text" id="name" name="name" 
-                                   class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300"
+                                   class="w-full px-3 py-2 sm:px-4 sm:py-3 bg-gray-700 border border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 text-sm sm:text-base"
                                    placeholder="Your name">
                         </div>
                         
                         <div>
-                            <label for="email" class="block text-sm font-medium mb-2">Email</label>
+                            <label for="email" class="block text-xs sm:text-sm font-medium mb-1 sm:mb-2">Email</label>
                             <input type="email" id="email" name="email" 
-                                   class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300"
+                                   class="w-full px-3 py-2 sm:px-4 sm:py-3 bg-gray-700 border border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 text-sm sm:text-base"
                                    placeholder="your@email.com">
                         </div>
                         
                         <div>
-                            <label for="message" class="block text-sm font-medium mb-2">Message</label>
-                            <textarea id="message" name="message" rows="5"
-                                      class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300"
+                            <label for="message" class="block text-xs sm:text-sm font-medium mb-1 sm:mb-2">Message</label>
+                            <textarea id="message" name="message" rows="4" 
+                                      class="w-full px-3 py-2 sm:px-4 sm:py-3 bg-gray-700 border border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 resize-vertical text-sm sm:text-base"
                                       placeholder="Tell me about your project..."></textarea>
                         </div>
                         
                         <button type="submit" 
-                                class="w-full bg-gradient-to-r from-blue-500 to-purple-600 px-8 py-3 rounded-lg font-semibold hover:from-blue-600 hover:to-purple-700 transition-all duration-300 transform hover:scale-105">
+                                class="w-full bg-gradient-to-r from-blue-500 to-purple-600 px-6 py-2 sm:px-8 sm:py-3 rounded-lg font-semibold hover:from-blue-600 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 text-sm sm:text-base">
                             <i class="fas fa-paper-plane mr-2"></i>
                             Send Message
                         </button>
