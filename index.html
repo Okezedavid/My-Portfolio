@@ -49,7 +49,7 @@
 </head>
 <body class="bg-gray-900 text-white overflow-x-hidden font-sans min-h-screen flex flex-col">
     <!-- Main Content Container -->
-    <div class="flex-grow">
+    <div class="flex-grow w-full">
     <!-- Navigation -->
     <nav class="fixed top-0 w-full bg-gray-900/95 backdrop-blur-sm z-50 border-b border-gray-800">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -89,9 +89,9 @@
         <div class="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%234f46e5" fill-opacity="0.05"%3E%3Ccircle cx="30" cy="30" r="2"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')] opacity-50"></div>
         
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div class="grid md:grid-cols-2 gap-12 items-center">
-                <div class="space-y-8 animate-slide-up">
-                    <h1 class="text-5xl md:text-7xl font-bold leading-tight font-heading">
+            <div class="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
+                <div class="space-y-6 md:space-y-8 animate-slide-up order-2 md:order-1">
+                    <h1 class="text-4xl sm:text-5xl md:text-7xl font-bold leading-tight font-heading">
                         Hi, I'm <span class="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">David</span>
                     </h1>
                     <h2 class="text-2xl md:text-3xl text-gray-300 font-light">
@@ -120,17 +120,17 @@
                         </a>
                     </div>
                 </div>
-                <div class="flex justify-center animate-float">
+                <div class="flex justify-center animate-float order-1 md:order-2">
                     <div class="relative">
-                        <div class="w-80 h-80 rounded-full bg-gradient-to-r from-blue-500 to-purple-600 p-1">
+                        <div class="w-64 h-64 sm:w-80 sm:h-80 rounded-full bg-gradient-to-r from-blue-500 to-purple-600 p-1">
                             <img src="./assets/imgs/Porfile image for my website.jpg" alt="David - Frontend Developer" 
                                  class="w-full h-full rounded-full object-cover">
                         </div>
-                        <div class="absolute -top-4 -right-4 w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center animate-pulse">
-                            <i class="fas fa-code text-white text-xl"></i>
+                        <div class="absolute -top-2 -right-2 sm:-top-4 sm:-right-4 w-12 h-12 sm:w-16 sm:h-16 bg-blue-500 rounded-full flex items-center justify-center animate-pulse">
+                            <i class="fas fa-code text-white text-lg sm:text-xl"></i>
                         </div>
-                        <div class="absolute -bottom-4 -left-4 w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center animate-pulse">
-                            <i class="fas fa-laptop-code text-white"></i>
+                        <div class="absolute -bottom-2 -left-2 sm:-bottom-4 sm:-left-4 w-10 h-10 sm:w-12 sm:h-12 bg-purple-500 rounded-full flex items-center justify-center animate-pulse">
+                            <i class="fas fa-laptop-code text-white text-sm sm:text-base"></i>
                         </div>
                     </div>
                 </div>
@@ -153,8 +153,8 @@
                 <div class="w-24 h-1 bg-gradient-to-r from-blue-400 to-purple-500 mx-auto"></div>
             </div>
             
-            <div class="grid md:grid-cols-2 gap-12 items-center">
-                <div class="space-y-6">
+            <div class="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
+                <div class="space-y-4 md:space-y-6 order-2 md:order-1">
                     <h3 class="text-2xl font-semibold text-blue-400">Frontend Developer & UI/UX Enthusiast</h3>
                     <p class="text-gray-300 leading-relaxed">
                         I'm a passionate frontend developer with expertise in modern web technologies. I love creating 
@@ -177,8 +177,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="relative">
-                    <div class="bg-gradient-to-r from-blue-500/20 to-purple-500/20 p-8 rounded-2xl">
+                <div class="relative order-1 md:order-2">
+                    <div class="bg-gradient-to-r from-blue-500/20 to-purple-500/20 p-6 md:p-8 rounded-2xl">
                         <div class="space-y-4">
                             <div class="flex items-center space-x-4">
                                 <i class="fas fa-graduation-cap text-blue-400 text-xl"></i>
@@ -601,8 +601,8 @@
                 </p>
             </div>
 
-            <div class="grid md:grid-cols-2 gap-12">
-                <div class="space-y-8">
+            <div class="grid md:grid-cols-2 gap-8 md:gap-12">
+                <div class="space-y-6 md:space-y-8 order-2 md:order-1">
                     <div class="bg-gray-800/50 p-6 rounded-xl">
                         <h3 class="text-2xl font-semibold mb-4">Get In Touch</h3>
                         <p class="text-gray-400 mb-6">
@@ -644,7 +644,7 @@
                     </div>
                 </div>
 
-                <div class="bg-gray-800/50 p-6 rounded-xl">
+                <div class="bg-gray-800/50 p-4 sm:p-6 rounded-xl order-1 md:order-2">
                     <form class="space-y-6">
                         <div>
                             <label for="name" class="block text-sm font-medium mb-2">Name</label>
@@ -681,27 +681,27 @@
     <!-- End Main Content Container -->
 
     <!-- Footer -->
-    <footer class="bg-gray-800 py-8 mt-auto border-t border-gray-700">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex flex-col md:flex-row justify-between items-center">
+    <footer class="bg-gray-800 py-6 sm:py-8 mt-auto border-t border-gray-700 w-full">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+            <div class="flex flex-col md:flex-row justify-between items-center w-full">
                 <div class="text-center md:text-left mb-4 md:mb-0">
-                    <p class="text-gray-400 text-sm">
+                    <p class="text-gray-400 text-xs sm:text-sm">
                         © 2025 David Okeze. Built with ❤️ using HTML, Vanilla JS and Tailwind CSS
                     </p>
                 </div>
-                <div class="flex space-x-6">
+                <div class="flex space-x-4 sm:space-x-6">
                     <a href="https://github.com/Okezedavid" target="_blank" rel="noopener noreferrer" 
                        class="text-gray-400 hover:text-blue-400 transition-colors duration-300 hover:scale-110 transform">
-                        <i class="fab fa-github text-xl"></i>
+                        <i class="fab fa-github text-lg sm:text-xl"></i>
                     </a>
                     <a href="https://www.linkedin.com/in/david-okeze-2300932b1?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" 
                        target="_blank" rel="noopener noreferrer"
                        class="text-gray-400 hover:text-blue-400 transition-colors duration-300 hover:scale-110 transform">
-                        <i class="fab fa-linkedin text-xl"></i>
+                        <i class="fab fa-linkedin text-lg sm:text-xl"></i>
                     </a>
                     <a href="https://x.com/DavidOkeze" target="_blank" rel="noopener noreferrer"
                        class="text-gray-400 hover:text-blue-400 transition-colors duration-300 hover:scale-110 transform">
-                        <i class="fab fa-twitter text-xl"></i>
+                        <i class="fab fa-twitter text-lg sm:text-xl"></i>
                     </a>
                 </div>
             </div>
